@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- GLOBAL RESET & CURSOR --- */
+* {
+  cursor: none !important;
+}
+
+body {
+  background-color: #050505;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Cursor Hover State */
+body.hovering #cursor-outline {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(197, 160, 89, 0.05);
+  border-color: transparent;
+}
+
+/* Scrollbar & Loader */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+html.lenis {
+  height: auto;
+}
+
+/* Masonry Grid */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+/* Vignette */
+.vignette {
+  background: radial-gradient(circle, transparent 40%, #dfdfdf 110%);
+}
