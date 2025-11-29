@@ -7,12 +7,10 @@ import QuoteSection from './components/sections/QuoteSection';
 import WorkSection from './components/sections/WorkSection';
 import AboutSection from './components/sections/AboutSection';
 import ContactSection from './components/sections/ContactSection';
-import ProjectModal from './components/ui/ProjectModal';
 import Lightbox from './components/ui/Lightbox';
 import './App.css';
 
 function App() {
-  const [selectedProject, setSelectedProject] = useState(null);
   const [lightboxSrc, setLightboxSrc] = useState(null);
 
   return (
@@ -21,15 +19,9 @@ function App() {
       <TransitionText />
       <ParallaxGallery />
       <QuoteSection />
-      <WorkSection onOpenProject={setSelectedProject} />
+      <WorkSection onImageClick={setLightboxSrc} />
       <AboutSection />
       <ContactSection />
-
-      <ProjectModal
-        project={selectedProject}
-        onClose={() => setSelectedProject(null)}
-        onOpenLightbox={setLightboxSrc}
-      />
 
       <Lightbox
         src={lightboxSrc}
