@@ -52,16 +52,16 @@ export default function AboutSection() {
 
                         <div className="mt-12 space-y-6 border-t border-white/10 pt-8 about-text-reveal">
                             <div className="flex justify-between items-center group cursor-pointer border-b border-transparent hover:border-white/10 pb-2 transition-colors">
-                                <TextRoll href="#contact" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Trusted By Brands" />
+                                <TextRoll href="#contact" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Happy Clients" />
                                 <span className="font-mono text-xs text-gray-500">Worldwide</span>
                             </div>
                             <div className="flex justify-between items-center group cursor-pointer border-b border-transparent hover:border-white/10 pb-2 transition-colors">
-                                <TextRoll href="#work" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Featured Editorially" />
-                                <span className="font-mono text-xs text-gray-500">Print & Digital</span>
+                                <TextRoll href="#work" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Spiritual" />
+                                <span className="font-mono text-xs text-gray-500">Stories</span>
                             </div>
                             <div className="flex justify-between items-center group cursor-pointer border-b border-transparent hover:border-white/10 pb-2 transition-colors">
-                                <TextRoll href="#about" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Exhibited Globally" />
-                                <span className="font-mono text-xs text-gray-500">Galleries</span>
+                                <TextRoll href="#about" className="font-display text-xl text-white group-hover:text-gold-accent transition-colors" text="Countless smiles" />
+                                <span className="font-mono text-xs text-gray-500">Recorded</span>
                             </div>
                         </div>
                         <div className="mt-12 about-text-reveal">
