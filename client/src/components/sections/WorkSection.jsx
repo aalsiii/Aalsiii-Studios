@@ -25,8 +25,8 @@ export default function WorkSection({ onOpenProject }) {
     }, []);
 
     return (
-        <section id="work" ref={sectionRef} className="relative py-32 bg-void z-20 border-t border-white/5">
-            <div className="max-w-7xl mx-auto mb-24 px-6 md:px-12 flex justify-between items-end">
+        <section id="work" ref={sectionRef} className="relative py-20 md:py-32 bg-void z-20 border-t border-white/5">
+            <div className="max-w-7xl mx-auto mb-16 md:mb-24 px-6 md:px-12 flex justify-between items-end">
                 <h2 className="text-4xl md:text-6xl font-display text-white">Selected<br /><span className="font-serif italic text-gold-accent">Works</span></h2>
             </div>
 

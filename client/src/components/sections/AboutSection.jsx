@@ -24,14 +24,14 @@ export default function AboutSection() {
     }, []);
 
     return (
-        <section id="about" ref={sectionRef} className="relative py-32 bg-charcoal overflow-hidden border-t border-white/5 z-50">
+        <section id="about" ref={sectionRef} className="relative py-20 md:py-32 bg-charcoal overflow-hidden border-t border-white/5 z-50">
 
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-                <div className="mb-24 flex justify-between items-end">
+                <div className="mb-16 md:mb-24 flex justify-between items-end">
                     <h2 className="text-4xl md:text-6xl font-display text-white">About<br /><span className="font-serif italic text-gold-accent">Me</span></h2>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                     <div className="relative group perspective-container">
                         <div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm border border-white/10 bg-void about-img-reveal">
                             <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200" alt="Artist Portrait" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out scale-100 group-hover:scale-105" />

@@ -45,9 +45,9 @@ export default function ParallaxGallery() {
 
     return (
         <div className="bg-void relative overflow-hidden z-20 border-t border-white/5">
-            <section id="parallax-gallery" ref={sectionRef} className="relative flex h-screen gap-6 px-4 md:px-12 items-center justify-center overflow-hidden">
+            <section id="parallax-gallery" ref={sectionRef} className="relative flex h-screen gap-4 md:gap-6 px-4 md:px-12 items-center justify-center overflow-hidden">
                 {images.map((colImages, i) => (
-                    <div key={i} className="parallax-col w-1/4 min-w-[200px] flex flex-col gap-8" data-offset={offsets[i]}>
+                    <div key={i} className={`parallax-col w-1/2 md:w-1/4 min-w-[150px] md:min-w-[200px] flex flex-col gap-4 md:gap-8 ${i >= 2 ? 'hidden md:flex' : ''}`} data-offset={offsets[i]}>
                         {colImages.map((src, j) => (
                             <div key={j} className="w-full aspect-[3/4] rounded-[2px] overflow-hidden border border-white/10">
                                 <img src={src} className="w-full h-full object-cover opacity-70 grayscale hover:grayscale-0 transition-all duration-1000" />

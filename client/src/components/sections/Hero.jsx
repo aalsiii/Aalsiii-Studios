@@ -289,12 +289,12 @@ export default function Hero({
             className={`relative h-screen w-screen overflow-hidden bg-void text-white uppercase font-sans ${className}`}
         >
             {/* Section preview thumbnails */}
-            <div className="absolute bottom-4 right-6 z-30 flex items-center gap-4">
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:bottom-4 md:right-6 z-30 flex items-center gap-4 w-full justify-center md:justify-end md:w-auto px-4">
                 <div className="flex gap-2">
                     {sections.map((section, i) => (
                         <div
                             key={`thumb-${i}`}
-                            className="w-12 h-8 rounded overflow-hidden relative cursor-pointer transition-transform duration-300 hover:scale-110"
+                            className="w-10 h-10 md:w-12 md:h-8 rounded overflow-hidden relative cursor-pointer transition-transform duration-300 hover:scale-110"
                             onClick={() => handleManualNavigation(i)}
                         >
                             <img
@@ -335,7 +335,7 @@ export default function Hero({
                                     backgroundImage: `linear-gradient(180deg, rgba(5,5,5,0.3) 0%, rgba(5,5,5,0.6) 100%), url("${section.img}")`
                                 }}
                             >
-                                <h2 className="section-heading text-white text-center font-display font-bold w-[90vw] max-w-[1200px] text-[clamp(2rem,6vw,9rem)] normal-case leading-none z-10" ref={(el) => { if (el) headingRefs.current[i] = el; }}>
+                                <h2 className="section-heading text-white text-center font-display font-bold w-[90vw] max-w-[1200px] text-[clamp(2.5rem,8vw,9rem)] normal-case leading-[1.1] md:leading-none z-10 px-4" ref={(el) => { if (el) headingRefs.current[i] = el; }}>
                                     {section.text}
                                 </h2>
                             </div>
