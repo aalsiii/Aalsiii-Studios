@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import TextRoll from '../ui/TextRoll';
+import aboutMeImg from '../../assets/about_me.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,7 +35,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                     <div className="relative group perspective-container">
                         <div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm border border-white/10 bg-void about-img-reveal">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200" alt="Artist Portrait" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out scale-100 group-hover:scale-105" />
+                            <img src={aboutMeImg} alt="Artist Portrait" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-out scale-100 group-hover:scale-105" />
                             <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent opacity-60"></div>
                         </div>
                     </div>
