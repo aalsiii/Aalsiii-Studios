@@ -1,8 +1,9 @@
 import React from 'react';
 
 export default function TextRoll({ text, href, className }) {
+    const Tag = href ? 'a' : 'div';
     return (
-        <a href={href} className={`group inline-flex overflow-hidden relative ${className}`}>
+        <Tag href={href} className={`group inline-flex overflow-hidden relative ${className}`}>
             {text.split('').map((char, i) => (
                 <span key={i} className="relative inline-block overflow-hidden">
                     <span
@@ -19,6 +20,6 @@ export default function TextRoll({ text, href, className }) {
                     </span>
                 </span>
             ))}
-        </a>
+        </Tag>
     );
 }
