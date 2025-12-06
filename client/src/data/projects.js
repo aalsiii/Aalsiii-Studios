@@ -23,6 +23,9 @@ import work22 from '../assets/work_22.jpg';
 import work23 from '../assets/work_23.jpg';
 import work24 from '../assets/work_24.jpg';
 import work25 from '../assets/work_25.jpg';
+import work26 from '../assets/work_26.jpg';
+import work27 from '../assets/work_27.jpg';
+import work28 from '../assets/work_28.jpg';
 
 export const projectsData = [
     workImage,
@@ -49,5 +52,8 @@ export const projectsData = [
     work22,
     work23,
     work24,
-    work25
+    work25,
+    work26,
+    work27,
+    work28
 ];
